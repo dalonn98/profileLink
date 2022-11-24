@@ -6,25 +6,95 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta property="og:title" content="르탄이 - 프로필 링크" />
         <meta property="og:description" content="어서와 코딩은 처음이지?" />
         <meta property="og:image" content="공유할 이미지" />
         <title>profileLink</title>
         <style>
-            .mytitle {
-                color: red;
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+            * {
+                font-family: "Pretendard",serif;
             }
+            body {
+                background-color: #ED9FA4;
+            }
+
+            .profile {
+                width: 100px;
+                height: 100px;
+
+                border-radius: 100%;
+                border : 2px solid #D9D5A3;
+
+                background-image: url('bender.png');
+                background-position: center;
+                background-size: cover;
+            }
+            .main {
+                color: #05184D;
+                size: 20px;
+
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            .sub {
+                color: white;
+                size: 14px;
+
+                margin-top: 0px;
+                margin-bottom: 30px;
+            }
+            .wrap {
+                width: 300px;
+                margin: 30px auto 0px auto;
+
+                /* 내용물 중앙 정렬 display-flex */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .wrap > a {
+                width: 300px;
+                height: 50px;
+
+                background-color: white;
+                border-radius: 8px;
+
+                margin-bottom: 10px;
+
+                font-size: 14px;
+                font-weight: bold;
+                color:#44398A;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                text-decoration: none;
+
+                box-shadow: 3px 3px 5px 0px black;
+
+            }
+            .wrap > a:hover {
+                background-color: #f2f2f2;
+                font-size: 15px;
+            }
+
         </style>
     </head>
     <body>
-        <div>나는 구역을 나누죠</div>
-        <p>나는 문단이에요</p>
-        <h1 class="mytitle"">h1은 제목이에요.</h1>
-        <h2>h2는 소제목입니다.</h2>
-        <h3>h3~h6 h 뒷 숫자가 커질수록 글자 크기는 작아져요. </h3>
-        <a href="https://spartacodingclub.kr/"> 하이퍼링크 </a>
-        <img src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/logo_teamsparta.png" width="300"/>  
-        <input type="text">
-        <button>버튼입니다.</button>
+        <div class="wrap">
+            <div class="profile"></div>
+            <h1 class="main">dalonn98</h1>
+            <p class="sub">Hi &#128540;&#128540;</p>
+            <a target="_blank" href="https://github.com/dalonn98" class="fa">&#xf092; Github</a>
+            <a target="_blank" href="https://www.instagram.com/100xoo/" class="fa"> &#xf16d; Instagram</a>
+            <a href="mailto:"dalonn98@gmail.com">&#x2709; Mail</a>
+        </div>
+
+
     </body>
 </html>
